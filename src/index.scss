@@ -1,0 +1,74 @@
+$gris1: #BDBEBC;
+$gris2: #7B7C79;
+$gris3: #3D3F3B;
+$rosa1: #F8C9D2;
+$rosa2: #F3A5B1;
+$rosa3: #EB6F82;
+$blanco: #FFFFFF;
+$negrotransparente: rgb(0,0,0,0.5);
+
+#root{
+  margin:0;
+  padding: 0;
+}
+header{
+  background-color: $rosa1;
+  padding: 5% 15%;
+  margin: 0 0 30px 0;
+  div{
+    border-radius: 20px;
+    background-image: url("/Imagenes/fondo.jpg");
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;    
+    background-size: cover;
+    height: 300px;
+    background-color: $negrotransparente;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      border-radius: 20px;
+    }
+    h1{
+      color: $blanco;
+      z-index: 2;
+      font-size: 64px;
+    }
+  }
+}
+nav{
+  background-color: $rosa3;
+  display: flex;
+  justify-content:space-between;
+  ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    li{
+      margin: 0 5px;
+      a{
+        color: $blanco;
+        text-decoration: none;
+      }
+    }
+  }
+  & .carrito{
+    margin: 5px 15px;
+    color: $blanco;
+    display: flex;
+    font-size: 20px;
+    p{
+      margin: 0 5px;
+      font-size: 15px;
+    }
+  }
+}
