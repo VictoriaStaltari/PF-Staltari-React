@@ -49,20 +49,16 @@ nav{
   background-color: $rosa3;
   display: flex;
   justify-content:space-between;
-  ul{
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    li{
-      margin: 0 5px;
-      a{
-        color: $blanco;
-        text-decoration: none;
-      }
+  a{
+    color: $blanco;
+    text-decoration: none;
+    padding: 3px;
+    &.active{
+      color: $gris1;
     }
-  }
+    }
   & .carrito{
-    margin: 5px 15px;
+    margin: 5px 15px 5px 30px;
     color: $blanco;
     display: flex;
     font-size: 20px;
