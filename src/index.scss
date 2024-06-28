@@ -68,3 +68,36 @@ nav{
     }
   }
 }
+.contenedor-lista{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 5px;
+  }
+  a{
+    text-decoration: none;
+  }
+  img{
+    display: inline;
+    width: 300px;
+    border-radius: 15px;
+  }
+  h2{
+    color: #7B7C79;
+    display: inline;
+  }
+  button{
+    background-color: $rosa3;
+    color: $blanco;
+    border-radius: 5px;
+    border-width: 0;
+    display: inline;
+  }
+
+}
