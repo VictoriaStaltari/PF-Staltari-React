@@ -11,6 +11,20 @@ $negrotransparente: rgb(0,0,0,0.5);
   margin:0;
   padding: 0;
 }
+
+// General
+button{
+  background-color: $rosa3;
+  color: $blanco;
+  border-radius: 5px;
+  border-width: 0;
+  display: inline;
+}
+a{
+  text-decoration: none;  
+}
+
+// Header
 header{
   background-color: $rosa1;
   padding: 5% 15%;
@@ -45,14 +59,16 @@ header{
     }
   }
 }
+
+// NavBar
 nav{
   background-color: $rosa3;
   display: flex;
   justify-content:space-between;
   a{
     color: $blanco;
-    text-decoration: none;
     padding: 3px;
+    text-decoration: none;
     &.active{
       color: $gris1;
     }
@@ -68,36 +84,105 @@ nav{
     }
   }
 }
-.contenedor-lista{
+
+// Item List
+.lista_productos{
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
-  article{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 15px 5px;
+  justify-content: space-around;
+}
+
+// Item
+.producto_en_lista{
+  padding: 20px;
+  margin: 20px;
+  background-color: $rosa1;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  img{
+    border-radius: 15px;
+    margin: 10px 0;
+  }
+  a{
+    text-decoration: none;  
+  }
+}
+
+// Item Detail
+.detalle_producto{
+  margin: auto;
+  padding: 20px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: $rosa1;
+  border-radius: 25px;
+  img{
+    border-radius: 20px;
+    margin: 15px;
+  }
+  a{
+    text-decoration: none;  
+  }
+}
+
+// Item Count
+.contador{
+  display: flex;
+  justify-content: center;
+  button{
+    margin: 10px;
+  }
+}
+
+// Cart
+
+//Item
+.item_carrito{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  margin: 20px;
+  border-radius: 15px;
+  background-color: $rosa1;
+  button{
+    font-size: 25px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+  }
+}
+
+//Buttons
+.botones_carrito{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  button{
+    display: block;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 45px;
+    width: 300px;
   }
   a{
     text-decoration: none;
   }
-  img{
-    display: inline;
-    width: 300px;
-    border-radius: 15px;
+}
+.ver_productos{
+  display: block;
+  padding: 5px;
+  margin: auto;
+  border-radius: 15px;
+  width: 70%;
+  font-size: 25px;
+  a{
+    text-decoration: none;
   }
-  h2{
-    color: #7B7C79;
-    display: inline;
-  }
-  button{
-    background-color: $rosa3;
-    color: $blanco;
-    border-radius: 5px;
-    border-width: 0;
-    display: inline;
-  }
-
 }
